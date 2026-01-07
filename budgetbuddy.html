@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy | Smart Allowance Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container header-container">
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <div class="logo-text">Budget<span>Buddy</span></div>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculation">Calculation</a></li>
+                <li><a href="#Information">Information</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+
+    <div class="container hero-container">
+
+
+        <div class="hero-content">
+            <div class="hero-subtitle">
+                <i class="fa-solid fa-star-of-life"></i>
+                Spend Smart, Save More, Stress Less
+            </div>
+
+            
+            <h1 class="hero-title">
+                Your Smart Companion <br>
+                <span>for Managing Allowance</span>
+            </h1>
+
+            <p class="hero-text">
+                Take control of your money, track your expenses, and build better spending habits — all in one place.
+            </p>
+
+            <div class="hero-buttons">
+               <a href="#about-us" class="btn btn-primary">
+                   Explore Our Project
+               </a>
+
+               <a href="#calculation" class="btn btn-secondary">
+                   Try Budget Calculator
+               </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CALCULATION ================= -->
+<section class="our-project" id="calculation">
+    <div class="container">
+
+        <div class="section-header">
+            <h1 class="section-subtitle">Our Innovation</h1>
+            <h2 class="section-title">Budget Buddy Calculator</h2>
+            <p class="section-desc">
+                A category-based budgeting tool designed to help students manage their allowance efficiently.
+            </p>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- STEP 1 -->
+            <div class="product-card">
+                <div class="product-info">
+                    <div class="product-tag">STEP 1</div>
+                    <h3 class="product-title">Monthly Allowance</h3>
+                    <p class="product-desc">
+                        Enter your total monthly allowance.
+                    </p>
+                    <input type="number" id="allowance" class="budget-input" placeholder="RM 500">
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="product-card">
+                <div class="product-info">
+                    <div class="product-tag">STEP 2</div>
+                    <h3 class="product-title">Expenses by Category</h3>
+                    <p class="product-desc">
+                        Allocate your spending based on student needs.
+                    </p>
+
+                    <input type="number" id="food" class="budget-input" placeholder="Food (RM)">
+                    <input type="number" id="transport" class="budget-input" placeholder="Transport (RM)">
+                    <input type="number" id="study" class="budget-input" placeholder="Study / Books (RM)">
+                    <input type="number" id="entertainment" class="budget-input" placeholder="Entertainment (RM)">
+                </div>
+            </div>
+
+            <!-- RESULT -->
+            <div class="product-card">
+                <div class="product-info">
+                    <div class="product-tag">RESULT</div>
+                    <h3 class="product-title">Budget Summary</h3>
+                    <p class="product-desc">
+                        Click calculate to view your remaining balance.
+                    </p>
+
+                    <button class="btn btn-primary" onclick="calculateBudget()">
+                        Calculate Budget
+                    </button>
+
+                    <p id="result"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="Information">
+    <div class="container">
+
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Sum Fun's Team</h3>
+                <p style="color: var(--text-light); margin-bottom:
+                20px;">We are students from Kolej Matrikulasi Negeri Sembilan participating in a Mathematics Innovation project.
+                    Budget Buddy was developed as a practical application of mathematical concepts to help students manage their allowance systematically.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Taman Bukit Intan, 72000 Kuala Pilah, Negeri Sembilan</li>
+                    <li><i class="fas fa-phone"></i> 06-484 1825</li>
+                    <li><i class="fas fa-envelope"></i> hello@budgetbuddy.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-poster">
+                <img src="503020.jpg" alt="50 30 20 budgeting rule poster">
+   
+        <div class="copyright">
+            © 2026 Budget Buddy. All rights reserved.
+        </div>
+
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
